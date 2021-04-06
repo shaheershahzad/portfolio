@@ -1,0 +1,249 @@
+/* CSS HEX
+--royal-blue-dark: #002f75ff;
+--tyrian-purple: #601148ff;
+--usafa-blue: #004e9cff;
+--pansy-purple: #87104bff; */
+
+/* Paleta de colores */
+.colors {
+    color: #601148ff;
+    color: #87104bff;
+    color: #004e9cff;
+    color: #002f75ff;
+} 
+
+@font-face {
+    font-family: my-font;
+    src: url(../assets/fonts/BebasNeue-Regular.woff);
+}
+
+html {
+    font-family: my-font;
+    scroll-behavior: smooth;
+    /*letter-spacing: 1px;*/
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url('../assets/img/bg4.jpg');
+    background-size: cover;
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff !important;
+    font-family: my-font !important;
+    overflow-x: hidden;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+i {
+    margin-left: 5px;
+}
+
+.horizontal-center {
+    text-align: center;
+}
+
+.div-horizontal-center {
+    margin: auto;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.navbar {
+    position: fixed !important;
+    width: 100%;
+    background: linear-gradient(-45deg, #44C9FF, #B60E56, #8a104e) !important;
+    z-index: 999;
+}
+
+.btn-primary {
+    color: #fff !important;
+    background: #8a104e !important;
+    border-color: #8a104e !important;
+}
+
+.btn-secondary-special {
+    color: #fff !important;
+    background: linear-gradient(130deg, #44C9FF, #B60E56, #8a104e) !important;
+    border-color: #8a104e !important;
+}
+
+.navbar a {
+    color: #fff !important;
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+}
+
+.navbar a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.card {
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.presentation {
+    height: 100vh;
+}
+
+.container {
+    margin-bottom: 50px;
+}
+
+.section-heading {
+    margin-bottom: 3rem;
+}
+
+.section-heading > h2 {
+    border-bottom: 3px solid;
+}
+
+.section-container {
+    margin-bottom: 5rem;
+}
+
+#section-education a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+#section-education ul > *, #section-projects .card-text {
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+p.social-links * {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.tech-logo, .profile-picture {
+    margin-bottom: 0.5rem;
+    padding: 20%;
+}
+
+.tech-logo, .profile-picture {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.tech-logo:hover, .profile-picture:hover {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.profile-picture:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.tech-logo-container {
+    margin: auto;
+}
+
+#section-techs .row {
+    background-color: #ffffffc2;
+    border-radius: 2%;
+    padding: 5%;
+}
+
+#section-about-me .section-body div {
+    margin-bottom: 2rem;
+}
+
+.list-group {
+    padding: 0 !important;
+}
+
+.list-group-item {
+    font-size: 1.2rem;
+    border-radius: 2rem !important;
+    cursor: pointer;
+}
+
+.list-group-item-special {
+    color: #fff !important;
+    background: linear-gradient(-45deg, #44C9FF, #B60E56, #8a104e) !important;
+}
+
+.list-group-item-primary {
+    color: #fff !important;
+    background-color: #8a104e !important;
+}
+
+.list-group-item:hover {
+    background-color: #ad1362 !important;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+
+/* Animations */
+
+.my-name {
+    animation: fluido 5s ease-in-out infinite;
+    background: linear-gradient(-45deg, #44C9FF, #B60E56, #8a104e);
+    background-size: 300%;
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
+@keyframes fluido {
+    0% { background-position: 0 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0 50% }
+}
+
+.fade-in {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+    
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+    
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+    
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+    
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@keyframes bgcolormove {
+    from {
+        background: linear-gradient(-45deg, #44C9FF, #B60E56, #8a104e) !important;
+    }
+    to {
+        background: linear-gradient(45deg, #44C9FF, #B60E56, #8a104e) !important;
+    }
+}
