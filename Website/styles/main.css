@@ -79,6 +79,7 @@ i {
     color: #fff !important;
     font-size: 1.2rem;
     margin: 0 0.5rem;
+    border-bottom: 1px solid transparent;
 }
 
 .navbar a:hover {
