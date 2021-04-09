@@ -32,7 +32,6 @@ $(function () {
     }
 
     $(document).scroll(function () {
-        console.log("test")
         if ($(document).scrollTop() >= 500) {
             // user scrolled 500 pixels or more
             $("#back-top").show();

@@ -17,11 +17,14 @@
     src: url(../assets/fonts/BebasNeue-Regular.woff);
 }
 
+* {
+    max-width: 100vw;
+}
+
 html {
     font-family: my-font;
     scroll-behavior: smooth;
     /*letter-spacing: 1px;*/
-    overflow-x: hidden;
 }
 
 body {
@@ -32,7 +35,6 @@ body {
     background-attachment: fixed;
     color: #fff !important;
     font-family: my-font !important;
-    overflow-x: hidden;
     z-index: -1;
     top: 0;
     left: 0;
@@ -193,7 +195,7 @@ p.social-links * {
 /* Animations */
 
 .my-name {
-    animation: fluido 5s ease-in-out infinite;
+    animation: fluido 4s ease-in-out infinite;
     background: linear-gradient(-45deg, #44C9FF, #B60E56, #8a104e);
     background-size: 300%;
     -webkit-background-clip: text;
